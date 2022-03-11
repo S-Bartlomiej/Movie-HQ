@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author = 'Bartłomiej Stypuła'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">   
+
+    <title>Film-HQ</title>
+</head>
+<body>
+
+
+<div id="full_container">
+<div class="top">
+    
+        
+        <div class="title"><img src="./graphic/logo.png" alt="logo">Film-HQ</div>
+   
+    
+    <div class="buttons-area">
+        <input type="text" class="btn" id='btn'>
+        <input type="submit" value="Search" class="btn-send" id='btn-send'>
+        <input type="submit" value="Library" class="btn-send btn-library" id='btn-library'>
+    </div>
+</div>
+<div class="bottom-card">
+<div class="bottom" id='bottom'></div>
+</div>
+
+
+</div>
+
+<div class='star_container' id="star_container">
+  <div class="star-widget">
+  
+  <input type="radio" name="rate" id="rate-5" onclick="get_star_value(this.id)">
+  <label for="rate-5" class="fas fa-star"></label>
+  <input type="radio" name="rate" id="rate-4" onclick="get_star_value(this.id)">
+  <label for="rate-4" class="fas fa-star"></label>
+  <input type="radio" name="rate" id="rate-3" onclick="get_star_value(this.id)">
+  <label for="rate-3" class="fas fa-star"></label>
+  <input type="radio" name="rate" id="rate-2" onclick="get_star_value(this.id)">
+  <label for="rate-2" class="fas fa-star"></label>
+  <input type="radio" name="rate" id="rate-1" onclick="get_star_value(this.id)">
+  <label for="rate-1" class="fas fa-star"></label>
+
+  <form aciton="#">
+      <header></header>
+      <div class="btn-popup">
+          <input type="button" value="Post" class="btn-send btn-score btn-pop" id="btn-pop" onClick="close_popup()">
+      </div>
+  </form>
+</div>
+
+
+
+
+<script src="index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
