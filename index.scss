@@ -103,6 +103,10 @@ body
 {
     background-color: #660000;
     border: #990000;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 300px;
 }
 
 .btn-send 
@@ -156,6 +160,17 @@ body
     {
         font-size: 20px;
         gap: 10px;
+    }
+
+    .buttons-area 
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top 
+    {
+        height: auto;
     }
 
 }

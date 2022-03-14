@@ -4,7 +4,7 @@ document.getElementById('btn-send').addEventListener('click', function(){
     
     function connect_to_api()
     {
-        axios.get('http://www.omdbapi.com/[your-api-key]' + btn)
+        axios.get('http://www.omdbapi.com/?apikey=[your-api-key]&s=' + btn)
         .then((response)=>{
             let search_movies = response.data.Search;
             let movies = Array.from(search_movies);
@@ -163,7 +163,7 @@ document.getElementById('btn-library').addEventListener('click', function()
        function return_library_movies() {
             for(let i = 0; i < library_keys.length; i++)
             {
-                axios.get('http://www.omdbapi.com/?[your-api-key]' + library_keys[i]).then((good_response_library)=>{
+                axios.get('http://www.omdbapi.com/?apikey=[your-api-key]&i=' + library_keys[i]).then((good_response_library)=>{
 
                     let library_movies = good_response_library.data;
                     all_library_movies.push(library_movies);
